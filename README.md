@@ -1,7 +1,7 @@
-# torch-geometric-mean
+# torch-geometric-median
 
-[![ci](https://img.shields.io/github/actions/workflow/status/chanind/torch-geometric-mean/ci.yaml?branch=main)](https://github.com/chanind/torch-geometric-mean)
-[![PyPI](https://img.shields.io/pypi/v/torch-geometric-mean?color=blue)](https://pypi.org/project/torch-geometric-mean/)
+[![ci](https://img.shields.io/github/actions/workflow/status/chanind/torch-geometric-median/ci.yaml?branch=main)](https://github.com/chanind/torch-geometric-median)
+[![PyPI](https://img.shields.io/pypi/v/torch-geometric-median?color=blue)](https://pypi.org/project/torch-geometric-median/)
 
 A simplified version of the [geom-median](https://github.com/krishnap25/geom_median) Python library, updated to be higher performance on Pytorch and with full type-hinting. Thanks to [@themachinefan](https://github.com/themachinefan)!
 
