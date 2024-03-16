@@ -49,4 +49,4 @@ version_variables = [
     "pyproject.toml:version",
 ]
 branch = "main"
-build_command = "pdm build"
+build_command = "pip install pdm && pdm build"
