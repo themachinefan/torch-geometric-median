@@ -1,0 +1,52 @@
+[project]
+name = "torch-geometric-mean"
+version = "0.1.0"
+description = "pytorch-optimized geometric mean implementation"
+authors = [{ name = "David Chanin", email = "chanindav@gmail.com" }]
+dependencies = ["torch>=2.0.0"]
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = ["pytest>=8.1.1", "ruff>=0.3.3", "pyright>=1.1.354", "geom-median>=0.1.0"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+reportMissingTypeStubs = "none"
+reportUnknownMemberType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownVariableType = "none"
+reportUntypedFunctionDecorator = "none"
+reportUnnecessaryIsInstance = "none"
+reportUnnecessaryComparison = "none"
+reportConstantRedefinition = "none"
+reportUnknownLambdaType = "none"
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+exclude = ["dist", "docs"]
+
+[tool.ruff.lint]
+ignore = ["E203", "E501", "E731"]
+extend-select = ["UP", "TID", "I", "F", "E", "ARG"]
+
+[tool.ruff.lint.flake8-tidy-imports.banned-api]
+"typing.Union".msg = "Use `|` instead"
+"typing.Optional".msg = "Use `| None` instead"
+"typing.Dict".msg = "Use `dict` instead"
+"typing.List".msg = "Use `list` instead"
+
+[tool.semantic_release]
+version_variables = [
+    "src/torch_geometric_mean/__init__.py:__version__",
+    "pyproject.toml:version",
+]
+branch = "main"
+build_command = "pdm build"
