@@ -61,7 +61,7 @@ median = geometric_median(
 
 ## Why does this library exist?
 
-It appears that the original [geom-median](https://github.com/krishnap25/geom_median) library is no longer maintained, and [as pointed out by @themachinefan](https://github.com/jbloomAus/mats_sae_training/pull/22/files), the original library is not very performant on Pytorch. This library is a repackaging of the original geom-median library, simplying the code to just support pytorch, improving torch performance, and adding full type-hinting.
+It appears that the original [geom-median](https://github.com/krishnap25/geom_median) library is no longer maintained, and [as pointed out by @themachinefan](https://github.com/jbloomAus/mats_sae_training/pull/22/files), the original library is not very performant on Pytorch. This library is a repackaging of [@themachinefan](https://github.com/themachinefan)'s improvements to the original geom-median library, simplying the code to just support pytorch, improving torch performance, and adding full type-hinting.
 
 ## Acknowledgements
 

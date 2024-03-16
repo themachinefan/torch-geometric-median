@@ -19,7 +19,7 @@ jobs:
       - name: check types
         run: pdm run pyright
       - name: build
-        run: pdm run build
+        run: pdm build
   release:
     needs: build
     permissions:
