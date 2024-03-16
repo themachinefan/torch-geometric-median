@@ -1,6 +1,6 @@
 [project]
 name = "torch-geometric-median"
-version = "0.1.0"
+version = "0.1.1"
 description = "pytorch-optimized geometric median implementation"
 authors = [{ name = "David Chanin", email = "chanindav@gmail.com" }]
 dependencies = ["torch>=2.0.0", "tqdm>=4.0.0"]

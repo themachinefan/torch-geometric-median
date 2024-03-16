@@ -2,6 +2,17 @@
 
 
 
+## v0.1.1 (2024-03-16)
+
+### Chore
+
+* chore: Update README.md ([`58c89e0`](https://github.com/chanind/torch-geometric-median/commit/58c89e09ee3f24f1bfa0eb4c014112b11116c392))
+
+### Fix
+
+* fix: fixing typo in README.md ([`f26bb2c`](https://github.com/chanind/torch-geometric-median/commit/f26bb2c9a55d99ba32de6b56c7ae10c4f166376b))
+
+
 ## v0.1.0 (2024-03-16)
 
 ### Chore
