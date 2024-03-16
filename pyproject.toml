@@ -1,12 +1,12 @@
 [project]
-name = "torch-geometric-mean"
+name = "torch-geometric-median"
 version = "0.1.0"
-description = "pytorch-optimized geometric mean implementation"
+description = "pytorch-optimized geometric median implementation"
 authors = [{ name = "David Chanin", email = "chanindav@gmail.com" }]
-dependencies = ["torch>=2.0.0"]
-requires-python = ">=3.11"
+dependencies = ["torch>=2.0.0", "tqdm>=4.0.0"]
+requires-python = ">=3.10"
 readme = "README.md"
-license = { text = "MIT" }
+license = { text = "GPL" }
 
 [build-system]
 requires = ["pdm-backend"]
@@ -45,7 +45,7 @@ extend-select = ["UP", "TID", "I", "F", "E", "ARG"]
 
 [tool.semantic_release]
 version_variables = [
-    "src/torch_geometric_mean/__init__.py:__version__",
+    "src/torch_geometric_median/__init__.py:__version__",
     "pyproject.toml:version",
 ]
 branch = "main"
