@@ -77,3 +77,5 @@ This library is licensed under a GPL license, as per the original geom-median li
 ## Contributing
 
 Contributions are welcome! Please open an issue or a PR if you have any suggestions or improvements. This library uses [PDM](https://pdm-project.org/) for dependency management, [Ruff](https://docs.astral.sh/ruff/) for linting, [Pyright](https://github.com/microsoft/pyright) for type-checking, and [Pytest](https://docs.pytest.org/en/8.0.x/) for tests.
+
+To contribute to the repo, first install dependencies with `pdm install`. Tests are run with `pdm run pytest`. Formatting is done with `pdm run ruff format` and linting with `pdm run ruff lint`. Type-checking is done with `pdm run pyright`. Please ensure that all tests pass, and that the code is formatted, linted, and type-checked before opening a PR.
